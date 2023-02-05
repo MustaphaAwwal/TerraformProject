@@ -1,2 +1,2 @@
 # TerraformProject
-An assignment repo, for spin ec2 instances and properly configuring it using terraform and ansible
+An assignment repo, for spinning ec2 instances and properly configuring them using terraform and ansible
