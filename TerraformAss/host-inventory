@@ -1,0 +1,6 @@
+[web1]
+44.204.124.158 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=./assignmentKey.pem
+[web2]
+44.192.42.220 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=./assignmentKey.pem
+[web0]
+3.239.199.252 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=./assignmentKey.pem

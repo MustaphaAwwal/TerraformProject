@@ -1,0 +1,38 @@
+---
+- name: Install httpd, set and display timezone
+  hosts: all
+  become: yes
+  gather_facts: no
+  tasks:
+    - name: apt update
+      become: true
+      apt:
+        upgrade: yes
+        update_cache: yes
+    - name: Install Apache and php
+      apt:
+        name:
+          - apache2
+          - php
+        state: present
+    - name: Set timezone to Africa/Lagos
+      timezone:
+         name: Africa/Lagos
+    - name: Check if already cloned
+      stat:
+        path: /var/www/html/server_stats_template
+      register: result
+    - name: copy server_stats_template.conf
+      copy:
+        src: ./server_stats_template.conf
+        dest: /etc/apache2/sites-available/
+    - name: git clone the code repo
+      shell: "{{ item }}"
+      with_items:
+        - git clone https://github.com/skylarng89/server_stats_template.git
+        - sudo a2dissite 000-default.conf
+        - sudo a2ensite server_stats_template.conf
+        - systemctl reload apache2
+      args:
+        chdir: /var/www/html
+      when: not result.stat.exists
