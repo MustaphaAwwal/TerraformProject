@@ -8,7 +8,7 @@ Before getting started, make sure you have the following prerequisites installed
 
 - Terraform
 - Ansible
-- AWS CLI ( Make sure you already link your IAM user to the CLI by running "AWS configure" on your Terminal,input the requested details like the secret key, access key etc.)
+- AWS CLI ( Make sure you already link your IAM user to the CLI by running "AWS configure" on your Terminal, and had inputted the requested details like the secret key, access key etc.)
 
 ## Usage
 
