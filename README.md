@@ -8,7 +8,7 @@ Before getting started, make sure you have the following prerequisites installed
 
 - Terraform
 - Ansible
-- AWS CLI ( Make sure you already link your IAM user to the CLI by running "AWS configure" on your Terminal, and had inputted the requested details like the secret key, access key etc.)
+- AWS CLI ( Make sure you already link your IAM user to the CLI by running "AWS configure" on your Terminal, and had inputted the requested details like the secret key, access key etc. using the default profile or change AWS_PROFILE variable in the TerraformAss/variable.tf file to suit you)
 
 ## Usage
 
@@ -20,7 +20,7 @@ Before getting started, make sure you have the following prerequisites installed
 
 `cd TerraformProject`
 
-3. Change the domain_name variable in the `TerraformAss/variable.tf` file to your domain nam
+3. Change the domain_name variable and sub-domain-name in the `TerraformAss/variable.tf` file to yours
 
 `nano TerraformAss/variable.tf`
 
