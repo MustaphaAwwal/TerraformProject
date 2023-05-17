@@ -46,6 +46,6 @@ To clean up and destroy the created resources, run:
 Please note that this will permanently delete all the provisioned infrastructure, including the EC2 instances, Load Balancer, and DNS records.
 
 ## Screenshots
-[./screenshot/instance.JPG](./screenshot/instance.JPG)
-[./screenshot/instance.JPG](./screenshot/instance.2JPG.JPG)
-[./screenshot/instance3.JPG](./screenshots/instance3.JPG)
+![instance](./screenshot/instance.JPG)
+![instance.JPG](./screenshot/instance.2JPG.JPG)
+![instance3](./screenshots/instance3.JPG)
