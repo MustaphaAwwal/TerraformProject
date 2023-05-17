@@ -19,7 +19,9 @@ Before getting started, make sure you have the following prerequisites installed
 
 `cd TerraformProject`
 
-3. Change the domain_name variable in the TerraformAss/variable.tf file to your domain nam
+3. Change the domain_name variable in the `TerraformAss/variable.tf` file to your domain nam
+
+`nano TerraformAss/variable.tf`
 
 4. Initialize Terraform:
 
