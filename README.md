@@ -48,4 +48,4 @@ Please note that this will permanently delete all the provisioned infrastructure
 ## Screenshots
 ![instance](./screenshot/instance.JPG)
 ![instance.JPG](./screenshot/instance.2JPG.JPG)
-![instance3](./screenshots/instance3.JPG)
+![instance3](./screenshot/instance3.JPG)
