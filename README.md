@@ -19,17 +19,19 @@ Before getting started, make sure you have the following prerequisites installed
 
 `cd TerraformProject`
 
-3. Initialize Terraform:
+3. Change the domain_name variable in the TerraformAss/variable.tf file to your domain nam
+
+4. Initialize Terraform:
 
 `terraform init`
 
-4. Create the infrastructure:
+5. Create the infrastructure:
 
 `terraform apply`
 
 This command will provision 3 EC2 instances and an Elastic Load Balancer on AWS. It will also create a record in Route53 and associate the load balancer's DNS with a subdomain.
 
-5. Run the Ansible script:
+6. Run the Ansible script:
 
 `ansible-playbook main.yml`
 
